@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import '@/styles/globals.css';
-import { Header, SideBar } from '@/components/nav';
+import Header from '@/components/nav/Header';
+import SideBar from '@/components/nav/Sidebar';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -15,6 +16,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 		<html lang="en">
 			<body className={inter.className}>
 				<Header />
+				<SideBar />
 				<div className="flex flex-col items-center justify-center mt-40 space-y-10 md:justify-start md:items-start md:ml-20 ml-10 mb-10">
 					{children}
 				</div>

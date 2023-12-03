@@ -1,3 +1,4 @@
+'use client';
 import NavOption from './NavOption';
 import { navOptions } from './nav-utils';
 import { useState } from 'react';
@@ -11,20 +12,20 @@ const SideBar = () => {
 		<>
 			{!showSidebar && (
 				<div
-					className="bg-white cursor-pointer md:hidden fixed grid h-14 place-items-center right-10 rounded-full top-4 w-14 z-50"
+					className="bg-white cursor-pointer md:hidden fixed grid h-10 place-items-center right-10 rounded-full top-6 w-10 z-50"
 					onClick={() => setShowSidebar(true)}
 				>
-					<FiMenu color="black" size="30" />
+					<FiMenu color="black" size="25" />
 				</div>
 			)}
 
 			<div
-				className={`bg-bgblue px-10 flex-col gap-4 flex md:hidden justify-center items-center fixed min-h-[120vh] top-0 right-0 z-50
+				className={`bg-bgblue px-10 flex-col gap-4 flex md:hidden justify-center items-center fixed min-h-[100vh] top-0 right-0 z-50 shadow-xl max-w-xs w-full 
                     transition-all duration-500 ease-in-out 
                     ${showSidebar ? 'translate-x-0 ' : 'translate-x-full'}`}
 			>
 				<div
-					className="grid bg-white cursor-pointer h-12 absolute place-items-center rounded-full top-4 left-10 w-12"
+					className="grid bg-white cursor-pointer h-10 absolute  rounded-full top-6 right-10 w-10"
 					onClick={() => setShowSidebar(false)}
 				>
 					<IoIosClose color="black" size="40" />
