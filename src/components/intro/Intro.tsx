@@ -8,7 +8,7 @@ export const Intro = () => {
 	return (
 		<motion.section
 			animate={{ y: 0 }}
-			className="space-y-5 max-w-7xl w-full mx-auto p-5 md:p-0"
+			className="space-y-5 max-w-7xl w-full mx-auto p-5 md:p-10"
 			id="intro"
 			initial={{ y: 60 }}
 			transition={{ duration: 0.5 }}
