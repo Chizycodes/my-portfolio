@@ -12,11 +12,11 @@ export default function Home() {
 		AOS.init();
 	}, []);
 	return (
-		<>
+		<div className="flex flex-col items-center justify-center space-y-20 md:justify-start mt-40 md:items-start mb-10 w-full">
 			<Intro />
 			<About />
 			<ProjectsComp />
 			<Skills />
-		</>
+		</div>
 	);
 }

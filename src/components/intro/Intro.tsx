@@ -8,7 +8,7 @@ export const Intro = () => {
 	return (
 		<motion.section
 			animate={{ y: 0 }}
-			className="space-y-5 max-w-7xl w-full mx-auto p-5 md:p-10"
+			className="space-y-5"
 			id="intro"
 			initial={{ y: 60 }}
 			transition={{ duration: 0.5 }}
@@ -26,7 +26,7 @@ export const Intro = () => {
 					</button>
 				</Link>
 
-				<Link activeClass="active" duration={500} href="work" offset={-100} smooth={true} spy={true} to="work">
+				<Link activeClass="active" duration={500} href="projects" offset={-100} smooth={true} spy={true} to="work">
 					<button className="py-2 px-5 !mt-10 text-darkerBlue bg-neon border-neon hover:bg-transparent duration-100 hover:text-neon border-2 rounded-lg">
 						Check out my work!
 					</button>

@@ -97,11 +97,22 @@ const data = {
 		{
 			title: 'Feegor',
 			img: '/images/feegor.png',
-			about:
-				'An e-commerce platform where retailers can source goods directly from suppliers/manufacturers.',
-			tags: ['Next.js', "React Native", 'TailwindCSS', 'Daisy UI',],
+			about: 'An e-commerce platform where retailers can source goods directly from suppliers/manufacturers.',
+			tags: ['Next.js', 'React Native', 'TailwindCSS', 'Daisy UI'],
 			links: {
 				live: 'https://www.feegor.com/',
+			},
+			role: 'Frontend Developer',
+			id: 2,
+		},
+		{
+			title: 'Avatar AI',
+			img: '/images/avatarai.png',
+			about: 'A web app for creating AI generated avatars, built as a final project in the HNGi9 Internship.',
+			tags: ['React.js', 'Vite', 'TailwindCSS', 'Daisy UI', 'Jest', 'Storybook'],
+			links: {
+				github: 'https://github.com/Chizycodes/avatarai.web',
+				live: 'https://avatarai-web-eight.vercel.app/',
 			},
 			role: 'Frontend Developer',
 			id: 2,
