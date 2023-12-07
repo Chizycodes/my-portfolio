@@ -8,10 +8,10 @@ import React from 'react';
 export const About = () => {
 	return (
 		<div className="flex flex-col items-center justify-center max-w-7xl w-full mx-auto p-5 md:p-10" id="about">
-			<Title num={1} title="About me" />
+			<Title title="About me" />
 
-			<div className="flex flex-col items-center justify-center md:flex-row md:justify-start md:items-start md:gap-20 w-full md:mt-10">
-				<div className="md:mt-0 mx-auto mt-20">
+			<div className="flex flex-col items-center justify-center md:flex-row md:justify-start md:items-start md:gap-20 w-full">
+				<div className="md:mt-0 mx-auto">
 					<Image
 						alt={data.name}
 						className="object-contain relative border-2 rounded-full w-80 h-80 border-neon"

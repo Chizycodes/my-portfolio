@@ -48,7 +48,7 @@ const Header = () => {
 
 			<ol className="hidden space-x-8 md:flex">
 				{navOptions.map((item, i) => (
-					<NavOption item={item} key={i} number={i + 1} />
+					<NavOption item={item} key={i} />
 				))}
 			</ol>
 		</nav>

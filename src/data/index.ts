@@ -71,26 +71,40 @@ const data = {
 	],
 	projects: [
 		{
-			name: 'Swiftwaze',
-			image: 'https://res.cloudinary.com/didkcszrq/image/upload/v1646014704/Frame_1_cglafw.png',
-			about: 'a fintech app for sending and receiving money, data, gift cards and airtime across borders.',
-			tech: ['React.js', 'Redux', 'MUI', 'React Query'],
+			title: 'Swiftwaze',
+			img: '/images/swiftwaze.png',
+			about: 'A fintech app for sending and receiving money, data, gift cards and airtime across borders.',
+			tags: ['React.js', 'Redux', 'MUI', 'React Query'],
 			links: {
-				Live: 'https://swiftwaze.com/',
+				live: 'https://demo.swiftwaze.com/',
 			},
 			role: 'Frontend developer',
+			id: 1,
 		},
 		{
-			name: 'DiagnoSync AI',
-			image: '/projects/react-next.js-snips.png',
+			title: 'DiagnoSync AI',
+			img: '/images/diagnosync.png',
 			about:
 				'Developed during the 7-day Klusterthon 2023 Hackathon. DiagnoSync provides answers to health related questions and concerns',
-			tech: ['Next.js', 'TailwindCSS', 'Node.js', 'Express', 'MongoDB', 'OpenAI API'],
+			tags: ['Next.js', 'TailwindCSS', 'Node.js', 'Express', 'MongoDB', 'OpenAI API'],
 			links: {
-				GitHub: 'https://github.com/avneesh0612/react-nextjs-snippets',
-				Live: 'https://klusterthon-326.vercel.app',
+				github: 'https://github.com/Chizycodes/klusterthon-326',
+				live: 'https://klusterthon-326.vercel.app',
 			},
 			role: 'FullStack Developer',
+			id: 2,
+		},
+		{
+			title: 'Feegor',
+			img: '/images/feegor.png',
+			about:
+				'An e-commerce platform where retailers can source goods directly from suppliers/manufacturers.',
+			tags: ['Next.js', "React Native", 'TailwindCSS', 'Daisy UI',],
+			links: {
+				live: 'https://www.feegor.com/',
+			},
+			role: 'Frontend Developer',
+			id: 2,
 		},
 	],
 	Experience: [
