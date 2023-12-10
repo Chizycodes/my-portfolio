@@ -32,25 +32,27 @@ const Header = () => {
 				handleShow ? 'shadow-2xl' : ''
 			}`}
 		>
-			<Link
-				activeClass="active"
-				duration={500}
-				href="intro"
-				offset={-100}
-				smooth={true}
-				spy={true}
-				title="Joy Okwudire"
-				to="intro"
-			>
-				{/* <Logo className="cursor-pointer" /> */}
-				<h1 className="text-neon font-bold text-4xl font-sora">J.O</h1>
-			</Link>
+			<div className="flex justify-between items-center w-full max-w-7xl mx-auto">
+				<Link
+					activeClass="active"
+					duration={500}
+					href="intro"
+					offset={-100}
+					smooth={true}
+					spy={true}
+					title="Joy Okwudire"
+					to="intro"
+				>
+					{/* <Logo className="cursor-pointer" /> */}
+					<h1 className="text-neon font-bold text-4xl font-sora">J.O</h1>
+				</Link>
 
-			<ol className="hidden space-x-8 md:flex">
-				{navOptions.map((item, i) => (
-					<NavOption item={item} key={i} />
-				))}
-			</ol>
+				<ol className="hidden space-x-8 md:flex">
+					{navOptions.map((item, i) => (
+						<NavOption item={item} key={i} />
+					))}
+				</ol>
+			</div>
 		</nav>
 	);
 };

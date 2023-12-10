@@ -11,62 +11,67 @@ const data = {
 		"Hello there! I'm Joy Okwudire, a passionate software developer hailing from Nigeria. My journey in the tech world has been an exciting adventure filled with problem-solving, creativity, and continuous learning. I thrive on turning ideas into reality through clean and efficient code. My goal is to create digital experiences that not only meet but exceed expectations.",
 	about2:
 		"I specialize in frontend development, where I leverage my skills in React.js, React Native, and Next.js to craft seamless and interactive user interfaces. I'm also well-versed in backend technologies like Node.js and MongoDB, allowing me to bridge the gap between design and functionality.",
-	website: '',
+
 	skills: [
 		{
-			src: '/logos/react.svg',
-			name: 'React',
-			link: 'https://reactjs.org/',
+			src: '/images/skills/react.svg',
+			name: 'React.js',
 		},
 		{
-			src: '/logos/nextjs.svg',
-			name: 'Next',
-			link: 'https://nextjs.org/',
+			src: '/images/skills/nextJS.svg',
+			name: 'Next.js',
 		},
 		{
-			src: '/logos/javascript.svg',
+			src: '/images/skills/javascript.svg',
 			name: 'Javascript',
-			link: 'https://www.typescriptlang.org/',
 		},
 		{
-			src: '/logos/vue.svg',
-			name: 'Vue',
-			link: 'https://reactjs.org/',
+			src: '/images/skills/vue.svg',
+			name: 'Vue.js',
 		},
 		{
-			src: '/logos/nextjs.svg',
+			src: '/images/skills/typescript.svg',
 			name: 'Typescript',
-			link: 'https://nextjs.org/',
 		},
 		{
-			src: '/logos/node.svg',
+			src: '/images/skills/nodeJS.svg',
 			name: 'Node.js',
-			link: 'https://www.typescriptlang.org/',
 		},
 		{
-			src: '/logos/tailwind.svg',
+			src: '/images/skills/express.svg',
 			name: 'Express',
-			link: 'https://tailwindcss.com/',
 		},
 		{
-			src: '/logos/tailwind.svg',
+			src: '/images/skills/mongoDB.svg',
 			name: 'MongoDB',
-			link: 'https://tailwindcss.com/',
 		},
 		{
-			src: '/logos/tailwind.svg',
+			src: '/images/skills/aws.svg',
 			name: 'AWS',
-			link: 'https://tailwindcss.com/',
 		},
 		{
-			src: '/logos/tailwind.svg',
+			src: '/images/skills/bootstrap.svg',
 			name: 'Bootstrap',
-			link: 'https://tailwindcss.com/',
 		},
 		{
-			src: '/logos/tailwind.svg',
+			src: '/images/skills/materialui.svg',
 			name: 'Material UI',
-			link: 'https://tailwindcss.com/',
+		},
+		{
+			src: '/images/skills/tailwind.svg',
+			name: 'Tailwind CSS',
+		},
+		{
+			src: '/images/skills/mysql.svg',
+			name: 'MySQL',
+		},
+		{
+			src: '/images/skills/html.svg',
+			name: 'HTML',
+		},
+		{
+			src: '/images/skills/css.svg',
+			name: 'CSS',
 		},
 	],
 	projects: [
@@ -103,7 +108,7 @@ const data = {
 				live: 'https://www.feegor.com/',
 			},
 			role: 'Frontend Developer',
-			id: 2,
+			id: 3,
 		},
 		{
 			title: 'Avatar AI',
@@ -115,7 +120,20 @@ const data = {
 				live: 'https://avatarai-web-eight.vercel.app/',
 			},
 			role: 'Frontend Developer',
-			id: 2,
+			id: 4,
+		},
+		{
+			title: 'Game Info Site',
+			img: '/images/ignite.png',
+			about:
+				'Game site leveraging the Rawg API, allows users to explore, search, and access detailed information about various games.',
+			tags: ['React.js', 'Redux', 'Styled Components', 'Rawg API'],
+			links: {
+				github: 'https://github.com/Chizycodes/react-game_site',
+				live: 'https://ignite-game-site.vercel.app/',
+			},
+			role: 'Frontend Developer',
+			id: 5,
 		},
 	],
 	Experience: [
