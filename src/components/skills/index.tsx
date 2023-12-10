@@ -22,11 +22,11 @@ export const Skills = () => {
 				>
 					{data?.skills.map((skill, id) => (
 						<div
-							className="shadow shadow-neon border-neon border-2 border-opacity-20 rounded-md w-40 h-40 m-4 flex flex-col items-center justify-center gap-2 p-6 transition-transform transform hover:scale-110"
+							className={`rounded-[10px] w-40 h-40 m-6 flex flex-col items-center justify-center py-8 px-4 transition-all transform duration-300 hover:scale-[1.15] skillsBox`}
 							key={id}
 						>
-							<Image src={skill.src} alt={skill.name} width={50} height={50} className="max-h-14" />
-							<h3 className="text-text text-center">{skill.name}</h3>
+							<Image src={skill.src} alt={skill.name} width={50} height={50} className="max-h-14 h-14 w-14" />
+							<h3 className="text-text text-center uppercase font-medium mt-4">{skill.name}</h3>
 						</div>
 					))}
 				</Marquee>

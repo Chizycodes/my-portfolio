@@ -59,7 +59,7 @@ const data = {
 		},
 		{
 			src: '/images/skills/tailwind.svg',
-			name: 'Tailwind CSS',
+			name: 'Tailwind',
 		},
 		{
 			src: '/images/skills/mysql.svg',
