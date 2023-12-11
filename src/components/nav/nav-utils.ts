@@ -1,18 +1,18 @@
 export const navOptions = [
 	{
 		name: 'About',
-		href: 'about',
+		href: '/#about',
 	},
 	{
 		name: 'Projects',
-		href: 'projects',
+		href: '/#projects',
 	},
 	{
 		name: 'Skills',
-		href: 'skills',
+		href: '/#skills',
 	},
 	{
 		name: 'Contact',
-		href: 'contact',
+		href: '/#contact',
 	},
 ];

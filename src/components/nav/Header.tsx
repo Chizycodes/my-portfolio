@@ -3,8 +3,9 @@
 // import Logo from '../../Icons/Logo';
 import NavOption from './NavOption';
 import { useEffect, useState } from 'react';
-import { Link } from 'react-scroll';
+// import { Link } from 'react-scroll';
 import { navOptions } from './nav-utils';
+import Link from 'next/link';
 
 const Header = () => {
 	const [handleShow, setHandleShow] = useState(false);
@@ -33,16 +34,7 @@ const Header = () => {
 			}`}
 		>
 			<div className="flex justify-between items-center w-full max-w-7xl mx-auto">
-				<Link
-					activeClass="active"
-					duration={500}
-					href="intro"
-					offset={-100}
-					smooth={true}
-					spy={true}
-					title="Joy Okwudire"
-					to="intro"
-				>
+				<Link href="/">
 					{/* <Logo className="cursor-pointer" /> */}
 					<h1 className="text-neon font-bold text-4xl font-sora">J.O</h1>
 				</Link>

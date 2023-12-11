@@ -34,11 +34,11 @@ const data = {
 			name: 'Typescript',
 		},
 		{
-			src: '/images/skills/nodeJS.svg',
+			src: '/images/skills/node.svg',
 			name: 'Node.js',
 		},
 		{
-			src: '/images/skills/express.svg',
+			src: '/images/skills/express.png',
 			name: 'Express',
 		},
 		{

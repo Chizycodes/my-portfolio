@@ -1,7 +1,7 @@
 'use client';
 
+import Link from 'next/link';
 import React, { FC } from 'react';
-import { Link } from 'react-scroll';
 
 interface INavOption {
 	item: {
@@ -13,9 +13,7 @@ interface INavOption {
 const NavOption: FC<INavOption> = ({ item }) => {
 	return (
 		<p className="border-b-2 border-transparent cursor-pointer text-text hover:border-neon">
-			<Link activeClass="active" duration={500} href={item.href} offset={-100} smooth={true} spy={true} to={item.href}>
-				{item.name}
-			</Link>
+			<Link href={item.href}>{item.name}</Link>
 		</p>
 	);
 };

@@ -20,9 +20,9 @@ const SideBar = () => {
 			)}
 
 			<div
-				className={`bg-bgblue px-10 flex-col gap-4 flex md:hidden justify-center items-center fixed min-h-[100vh] top-0 right-0 z-50 shadow-xl max-w-xs w-full 
-                    transition-all duration-500 ease-in-out 
-                    ${showSidebar ? 'translate-x-0 ' : 'translate-x-full'}`}
+				className={`bg-bgblue px-10 flex-col gap-4 flex md:hidden justify-center items-center fixed min-h-[100vh] top-0 right-0 z-50 shadow-xl max-w-xs w-full transition-all duration-500 ease-in-out ${
+					showSidebar ? 'translate-x-0 ' : 'translate-x-full'
+				}`}
 			>
 				<div
 					className="grid bg-white cursor-pointer h-10 absolute  rounded-full top-6 right-10 w-10"
@@ -32,7 +32,7 @@ const SideBar = () => {
 				</div>
 				<div className="flex flex-col gap-4">
 					{navOptions.map((option, i) => (
-						<NavOption item={option} key={option.name} number={i + 1} />
+						<NavOption item={option} key={i} />
 					))}
 				</div>
 			</div>
