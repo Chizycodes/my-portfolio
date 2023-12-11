@@ -34,7 +34,7 @@ const Header = () => {
 			}`}
 		>
 			<div className="flex justify-between items-center w-full max-w-7xl mx-auto">
-				<Link href="/">
+				<Link href="/#intro">
 					{/* <Logo className="cursor-pointer" /> */}
 					<h1 className="text-neon font-bold text-4xl font-sora">J.O</h1>
 				</Link>

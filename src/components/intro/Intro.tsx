@@ -6,13 +6,7 @@ import { Link } from 'react-scroll';
 
 export const Intro = () => {
 	return (
-		<motion.section
-			animate={{ y: 0 }}
-			className="space-y-5"
-			id="intro"
-			initial={{ y: 60 }}
-			transition={{ duration: 0.5 }}
-		>
+		<motion.section animate={{ y: 0 }} className="space-y-5" initial={{ y: 60 }} transition={{ duration: 0.5 }}>
 			<p className="text-3xl text-neon font-fira">Hi, my name is</p>
 			<h1 className="text-5xl font-extrabold text-text md:text-8xl">{data.name}</h1>
 			<h2 className="text-4xl text-textDark md:text-6xl">I am a Software Developer!</h2>

@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import React, { FC } from 'react';
+import { usePathname, useParams } from 'next/navigation';
 
 interface INavOption {
 	item: {
@@ -11,8 +12,15 @@ interface INavOption {
 }
 
 const NavOption: FC<INavOption> = ({ item }) => {
+	let pathname = usePathname();
+	
+	const isActive = pathname === item.href;
 	return (
-		<p className="border-b-2 border-transparent cursor-pointer text-text hover:border-neon">
+		<p
+			className={`border-b-2 cursor-pointer text-text hover:border-neon ${
+				isActive ? 'border-neon' : 'border-transparent'
+			}`}
+		>
 			<Link href={item.href}>{item.name}</Link>
 		</p>
 	);
