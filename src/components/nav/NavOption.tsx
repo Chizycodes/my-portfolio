@@ -13,8 +13,8 @@ interface INavOption {
 
 const NavOption: FC<INavOption> = ({ item }) => {
 	let pathname = usePathname();
-	
-	const isActive = pathname === item.href;
+
+	const isActive = pathname.includes(item.name.toLowerCase());
 	return (
 		<p
 			className={`border-b-2 cursor-pointer text-text hover:border-neon ${
