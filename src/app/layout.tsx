@@ -16,9 +16,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 			<body>
 				<Header />
 				<SideBar />
-				<div id="intro" className="max-w-7xl w-full mx-auto p-5 md:px-8 md:py-10">
-					<div className="w-64 h-64 rounded-full bg-neon fixed mx-auto my-auto blur-xl inset-0 opacity-20" />
-					{children}
+				<div id="intro" className="px-8 md:px-24 w-full max-w-[100vw]">
+					<div className="w-full max-w-7xl mx-auto">
+						<div className="w-64 h-64 rounded-full bg-neon fixed mx-auto my-auto blur-xl inset-0 opacity-20" />
+						{children}
+					</div>
 				</div>
 			</body>
 		</html>
