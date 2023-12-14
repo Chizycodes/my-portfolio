@@ -35,12 +35,14 @@ function Projects() {
 			</motion.div>
 
 			{projectsList.length > 3 && (
-				<motion.div
-					className="mt-8 max-w-sm md:max-w-2xl border border-fun-pink mx-auto text-center w-full whitespace-nowrap px-8 py-3 rounded-full text-fun-pink bg-fun-pink-darkerer hover:bg-fun-pink hover:text-white transition-colors cursor-pointer"
-					variants={cardVariants}
-				>
-					<Link href="/projects">View All</Link>
-				</motion.div>
+				<Link href="/projects">
+					<motion.div
+						className="mt-8 max-w-sm md:max-w-2xl border border-fun-pink mx-auto text-center w-full whitespace-nowrap px-8 py-3 rounded-full text-fun-pink bg-fun-pink-darkerer hover:bg-fun-pink hover:text-white transition-colors cursor-pointer"
+						variants={cardVariants}
+					>
+						View All
+					</motion.div>
+				</Link>
 			)}
 		</div>
 	);
