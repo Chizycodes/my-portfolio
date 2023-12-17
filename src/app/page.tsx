@@ -3,6 +3,7 @@ import { About } from '@/components/about';
 import { Intro } from '@/components/intro/Intro';
 import { ProjectsComp } from '@/components/projects';
 import { Skills } from '@/components/skills';
+import Contact from "@/components/contact";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
@@ -17,6 +18,7 @@ export default function Home() {
 			<About />
 			<ProjectsComp />
 			<Skills />
+			<Contact/>
 		</div>
 	);
 }
