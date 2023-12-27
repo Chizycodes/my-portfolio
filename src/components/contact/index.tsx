@@ -15,7 +15,6 @@ const Contact = () => {
 					<h2 className="text-xl text-text md:text-4xl whitespace-nowrap">Get in Touch</h2>
 					<LineSvg className="relative w-20 h-1 md:w-60" />
 				</div>
-
 				<div className="flex flex-wrap items-center justify-center mx-auto">
 					{data.links.map(({ icon, link, name }, i) => (
 						<div key={name}>
