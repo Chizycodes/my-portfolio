@@ -28,6 +28,7 @@ export const Intro = () => {
 						<button className="py-2 px-5 !mt-10 text-darkerBlue bg-neon border-neon hover:bg-transparent duration-100 hover:text-neon border-2 rounded-lg">
 							My Resume
 						</button>
+						
 					</Link>
 				</div>
 			</motion.div>
