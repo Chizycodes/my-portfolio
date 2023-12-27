@@ -1,41 +1,31 @@
 'use client';
 import React from 'react';
 import data from '@/data';
+import { usePathname } from 'next/navigation';
 import ProjectCard from './ProjectCard';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 function Projects() {
+	const pathname = usePathname();
 	const projectsList = data?.projects;
 
-	const containerVariants = {
-		hidden: { opacity: 0 },
-		visible: { opacity: 1, transition: { staggerChildren: 0.2 } },
-	};
+	const showAllProjects = pathname === '/projects';
 
-	const cardVariants = {
-		hidden: { opacity: 0, y: 20 },
-		visible: { opacity: 1, y: 0 },
-	};
 	return (
 		<div>
-			<motion.div
-				variants={containerVariants}
-				initial="hidden"
-				animate="visible"
-				className="grid grid-cols-1 gap-8 md:grid-cols-3 items-start"
-			>
-				{projectsList.slice(0, 3).map((item) => {
+			<div className="grid grid-cols-1 gap-8 md:grid-cols-3 items-start">
+				{projectsList?.slice(0, showAllProjects ? undefined : 3).map((item) => {
 					return (
-						<motion.div key={item.id} variants={cardVariants}>
-							<ProjectCard key={item.id} project={item} />
+						<motion.div key={item.id} animate={{ opacity: 1 }} initial={{ opacity: 0 }} transition={{ duration: 4 }}>
+							<ProjectCard project={item} />
 						</motion.div>
 					);
 				})}
-			</motion.div>
+			</div>
 
-			{projectsList.length > 3 && (
-				<motion.div variants={cardVariants} className="mt-8">
+			{projectsList.length > 3 && !showAllProjects && (
+				<motion.div animate={{ opacity: 1 }} initial={{ opacity: 0 }} transition={{ duration: 3 }} className="mt-8">
 					<Link href="/projects">
 						<div className='max-w-sm md:max-w-2xl border border-neon mx-auto text-center w-full whitespace-nowrap px-8 py-3 rounded-full text-neon hover:bg-fun-pink hover:text-white transition-colors cursor-pointer"'>
 							View All

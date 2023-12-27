@@ -6,7 +6,7 @@ import React from 'react';
 
 export const Intro = () => {
 	return (
-		<section className='min-h-screen flex items-center'>
+		<section className='min-h-screen flex items-center mt-28 md:mt-0'>
 			<motion.div animate={{ y: 0 }} className="space-y-5" initial={{ y: 60 }} transition={{ duration: 0.5 }}>
 				<p className="text-3xl text-neon font-fira">Hi, my name is</p>
 				<h1 className="text-5xl font-extrabold text-text md:text-8xl">{data.name}</h1>
@@ -14,9 +14,9 @@ export const Intro = () => {
 				<p className="w-4/5 md:w-3/5 text-textDark">
 					I&rsquo;m a <span className="text-neon">{data.profession} </span>from Nigeria. {data.intro}
 				</p>
-				<div className="flex space-x-3">
+				<div className="flex flex-wrap gap-3 pt-5 md:pt-10">
 					<Link href="/#projects">
-						<button className="py-2 px-5 !mt-10 hover:bg-neon hover:border-neon hover:backdrop-blur-lg hover:text-darkerBlue duration-100 border-neon border-2 text-neon rounded-lg">
+						<button className="py-2 px-5 hover:bg-neon hover:border-neon hover:backdrop-blur-lg hover:text-darkerBlue duration-100 border-neon border-2 text-neon rounded-lg">
 							Check out my work!
 						</button>
 					</Link>
@@ -25,7 +25,7 @@ export const Intro = () => {
 						href="https://drive.google.com/file/d/1HxbVkhfSqL7sNhhqBoq3Bg430hgeb5zZ/view?usp=sharing"
 						target="_blank"
 					>
-						<button className="py-2 px-5 !mt-10 text-darkerBlue bg-neon border-neon hover:bg-transparent duration-100 hover:text-neon border-2 rounded-lg">
+						<button className="py-2 px-5 text-darkerBlue bg-neon border-neon hover:bg-transparent duration-100 hover:text-neon border-2 rounded-lg">
 							My Resume
 						</button>
 						
