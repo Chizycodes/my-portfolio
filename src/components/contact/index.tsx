@@ -7,7 +7,7 @@ import ContactButtons from './ContactButtons';
 
 const Contact = () => {
 	return (
-		<section>
+		<section className="pt-5">
 			{/* <Title title="Get in Touch" /> */}
 			<div className="z-50 flex flex-col items-center justify-center w-full" id="contact">
 				<div className="flex items-center justify-center mt-10 space-x-5">

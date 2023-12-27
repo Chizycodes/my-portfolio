@@ -7,7 +7,7 @@ import React from 'react';
 
 export const About = () => {
 	return (
-		<div className="" id="about">
+		<div className="pt-5" id="about">
 			<Title title="About me" />
 
 			<div className="flex flex-col items-center justify-center md:flex-row md:justify-start md:items-start md:gap-20 w-full">

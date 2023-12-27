@@ -5,7 +5,7 @@ import Projects from './Projects';
 
 export const ProjectsComp = () => {
 	return (
-		<section id="projects">
+		<section className="pt-5" id="projects">
 			<Title title="My projects" />
 			<div>
 				<Projects />

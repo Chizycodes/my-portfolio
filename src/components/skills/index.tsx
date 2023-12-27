@@ -7,7 +7,7 @@ import Marquee from 'react-fast-marquee';
 
 export const Skills = () => {
 	return (
-		<div className="w-full" id="skills">
+		<div className="pt-5" id="skills">
 			<Title title="Skills" />
 
 			<div className="">
