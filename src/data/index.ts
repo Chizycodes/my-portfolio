@@ -76,6 +76,18 @@ const data = {
 	],
 	projects: [
 		{
+			title: "Yaraa.io",
+			img: "/images/yaraa2.png",
+			about:
+				 "An ERP system for managing projects, sales, procurement, and contracts. I built the project management module and integration feature for ERPs like QuickBooks and Xero.",
+			tags: ["React", "Next.js", "TailwindCSS", "SCSS", "Ant Design", "Jira"],
+			links: {
+				live: "https://www.yaraa.io",
+			},
+			role: "Frontend Developer",
+			id: 7,
+		},
+		{
 			title: "Wallpaper App",
 			img: "/images/wallpaper_app.png",
 			about:
