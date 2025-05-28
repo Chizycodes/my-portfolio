@@ -1,14 +1,15 @@
 const data = {
 	name: "Joy Okwudire",
-	image: "/me.png",
+	image: "/avatar.jpg",
 	username: "chizycodes",
+	resumeUrl: "https://drive.google.com/file/d/1LGbGdAFTqqqMzH9z3sHyQOIEpKAa4i8j/view?usp=sharing",
 	keywords:
 		"Joy, Okwuidre, Chisom, Joy Okwudire, Joy Chisom Okwuidre web developer, Frontend developer, frontend engineer, backend developer, software developer",
 	profession: "Software developer",
 	intro:
 		"I specialize in crafting both frontend and backend solutions, turning ideas into reality through clean and efficient code. Let's build something amazing together! 🚀",
 	about1:
-		"Hello there! I'm Joy Okwudire, a passionate software developer hailing from Nigeria. My journey in the tech world has been an exciting adventure filled with problem-solving, creativity, and continuous learning. I thrive on turning ideas into reality through clean and efficient code. My goal is to create digital experiences that not only meet but exceed expectations.",
+		"Hello there! I'm Joy Okwudire, a passionate software developer from Nigeria. My journey in the tech world has been an exciting adventure filled with problem-solving, creativity, and continuous learning. I thrive on turning ideas into reality through clean and efficient code. My goal is to create digital experiences that not only meet but exceed expectations.",
 	about2:
 		"I specialize in frontend development, where I leverage my skills in React.js, React Native, and Next.js to craft seamless and interactive user interfaces. I'm also well-versed in backend technologies like Node.js and MongoDB, allowing me to bridge the gap between design and functionality.",
 
