@@ -2,7 +2,7 @@ const data = {
 	name: "Joy Okwudire",
 	image: "/avatar.jpg",
 	username: "chizycodes",
-	resumeUrl: "https://drive.google.com/file/d/1LGbGdAFTqqqMzH9z3sHyQOIEpKAa4i8j/view?usp=sharing",
+	resumeUrl: "https://drive.google.com/file/d/1LGbGdAFTqqqMzH9z3sHyQOIEpKAa4i8j/view?usp=drive_link",
 	keywords:
 		"Joy, Okwuidre, Chisom, Joy Okwudire, Joy Chisom Okwuidre web developer, Frontend developer, frontend engineer, backend developer, software developer",
 	profession: "Software developer",
