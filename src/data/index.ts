@@ -24,31 +24,6 @@ const data = {
 			image: "/images/aws-certified-cloud-practitioner.png",
 			link: "https://www.credly.com/badges/07a7666c-c210-4d88-b80c-4f4bcd3874b7/public_url",
 		},
-		{
-			name: "AWS Cloud Practitioner",
-			image: "/images/aws-certified-cloud-practitioner.png",
-			link: "https://www.credly.com/badges/07a7666c-c210-4d88-b80c-4f4bcd3874b7/public_url",
-		},
-		{
-			name: "AWS Cloud Practitioner",
-			image: "/images/aws-certified-cloud-practitioner.png",
-			link: "https://www.credly.com/badges/07a7666c-c210-4d88-b80c-4f4bcd3874b7/public_url",
-		},
-		{
-			name: "AWS Cloud Practitioner",
-			image: "/images/aws-certified-cloud-practitioner.png",
-			link: "https://www.credly.com/badges/07a7666c-c210-4d88-b80c-4f4bcd3874b7/public_url",
-		},
-		{
-			name: "AWS Cloud Practitioner",
-			image: "/images/aws-certified-cloud-practitioner.png",
-			link: "https://www.credly.com/badges/07a7666c-c210-4d88-b80c-4f4bcd3874b7/public_url",
-		},
-		{
-			name: "AWS Cloud Practitioner",
-			image: "/images/aws-certified-cloud-practitioner.png",
-			link: "https://www.credly.com/badges/07a7666c-c210-4d88-b80c-4f4bcd3874b7/public_url",
-		},
 	],
 
 	skills: [

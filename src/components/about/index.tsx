@@ -14,13 +14,13 @@ export const About = () => {
 			<div className="flex flex-col items-center justify-center md:flex-row md:justify-start md:items-start md:gap-20 w-full">
 				{/* IMAGE + BADGES */}
 				<motion.div
-					className="mx-auto w-96"
+					className="mx-auto w-full md:w-96"
 					initial={{ opacity: 0, y: 50 }}
 					whileInView={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.6, ease: "easeOut" }}
 					viewport={{ once: false, amount: 0.3 }}
 				>
-					<div className="relative border-2 rounded-xl w-full h-96 border-neon">
+					<div className="relative border-2 rounded-xl w-full max-w-[24rem] h-96 border-neon">
 						<Image
 							src={data.image}
 							alt={data.name}
@@ -39,10 +39,10 @@ export const About = () => {
 							visible: { transition: { staggerChildren: 0.15 } },
 						}}
 					>
-						{data.badges.map((badge, idx) => (
+						{data.badges?.map((badge: { link: string; image: string; name: string }, idx) => (
 							<motion.a
 								key={idx}
-								href={badge.link}
+								href={badge?.link}
 								target="_blank"
 								rel="noopener noreferrer"
 								variants={{
@@ -51,7 +51,7 @@ export const About = () => {
 								}}
 								transition={{ duration: 0.4 }}
 							>
-								<Image src={badge.image} alt={badge.name} width={100} height={100} className="rounded" />
+								<Image src={badge?.image} alt={badge?.name} width={100} height={100} className="rounded" />
 							</motion.a>
 						))}
 					</motion.div>
@@ -59,7 +59,7 @@ export const About = () => {
 
 				{/* TEXT PARAGRAPHS WITH STAGGERED ANIMATION */}
 				<motion.div
-					className="md:w-4/6 px-3"
+					className="md:w-4/6 px-3 mt-8 md:mt-0"
 					initial="hidden"
 					whileInView="visible"
 					variants={{
