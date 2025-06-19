@@ -4,6 +4,7 @@ import { Title } from "../common/Title";
 import data from "@/data";
 import Image from "next/image";
 import React from "react";
+import { motion } from "framer-motion";
 
 export const About = () => {
 	return (
@@ -11,8 +12,15 @@ export const About = () => {
 			<Title title="About me" />
 
 			<div className="flex flex-col items-center justify-center md:flex-row md:justify-start md:items-start md:gap-20 w-full">
-				<div className="md:mt-0 mx-auto">
-					<div className="relative border-2 rounded-xl w-96 h-96 border-neon">
+				{/* IMAGE + BADGES */}
+				<motion.div
+					className="mx-auto w-96"
+					initial={{ opacity: 0, y: 50 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					transition={{ duration: 0.6, ease: "easeOut" }}
+					viewport={{ once: false, amount: 0.3 }}
+				>
+					<div className="relative border-2 rounded-xl w-full h-96 border-neon">
 						<Image
 							src={data.image}
 							alt={data.name}
@@ -21,11 +29,62 @@ export const About = () => {
 							width={250}
 						/>
 					</div>
-				</div>
-				<div className="mt-10 md:w-4/6 px-3">
-					<p className="text-xl text-textDark max-w-3xl">{data.about1}</p>
-					<p className="text-xl text-textDark max-w-3xl mt-4">{data.about2}</p>
-				</div>
+
+					<motion.div
+						className="w-full flex gap-4 flex-wrap mt-8"
+						initial="hidden"
+						whileInView="visible"
+						viewport={{ once: false }}
+						variants={{
+							visible: { transition: { staggerChildren: 0.15 } },
+						}}
+					>
+						{data.badges.map((badge, idx) => (
+							<motion.a
+								key={idx}
+								href={badge.link}
+								target="_blank"
+								rel="noopener noreferrer"
+								variants={{
+									hidden: { opacity: 0, scale: 0.9 },
+									visible: { opacity: 1, scale: 1 },
+								}}
+								transition={{ duration: 0.4 }}
+							>
+								<Image src={badge.image} alt={badge.name} width={100} height={100} className="rounded" />
+							</motion.a>
+						))}
+					</motion.div>
+				</motion.div>
+
+				{/* TEXT PARAGRAPHS WITH STAGGERED ANIMATION */}
+				<motion.div
+					className="md:w-4/6 px-3"
+					initial="hidden"
+					whileInView="visible"
+					variants={{
+						visible: {
+							transition: {
+								staggerChildren: 0.2,
+							},
+						},
+					}}
+					viewport={{ once: false }}
+				>
+					{data.about.map((paragraph, index) => (
+						<motion.p
+							key={index}
+							className="text-xl text-textDark max-w-3xl mb-4"
+							variants={{
+								hidden: { opacity: 0, y: 20 },
+								visible: { opacity: 1, y: 0 },
+							}}
+							transition={{ duration: 0.5 }}
+						>
+							{paragraph}
+						</motion.p>
+					))}
+				</motion.div>
 			</div>
 		</div>
 	);

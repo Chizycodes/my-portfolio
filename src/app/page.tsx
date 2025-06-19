@@ -13,7 +13,7 @@ export default function Home() {
 		AOS.init();
 	}, []);
 	return (
-		<div className=" mb-10 w-full">
+		<div className="pb-20 w-full">
 			<Intro />
 			<div className="space-y-16">
 				<About />

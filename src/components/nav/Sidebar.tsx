@@ -12,23 +12,23 @@ const SideBar = () => {
 		<>
 			{!showSidebar && (
 				<div
-					className="bg-white cursor-pointer md:hidden fixed grid h-10 place-items-center right-10 rounded-full top-6 w-10 z-50"
+					className="cursor-pointer md:hidden fixed grid place-items-center right-8 top-6 z-50"
 					onClick={() => setShowSidebar(true)}
 				>
-					<FiMenu color="black" size="25" />
+					<FiMenu color="#52DEE5" size="25" />
 				</div>
 			)}
 
 			<div
 				className={`bg-bgblue px-10 flex-col gap-4 flex md:hidden justify-center items-center fixed min-h-[100vh] top-0 right-0 z-50 shadow-xl max-w-xs w-full transition-all duration-500 ease-in-out ${
-					showSidebar ? 'translate-x-0 ' : 'translate-x-full'
+					showSidebar ? "translate-x-0 " : "translate-x-full"
 				}`}
 			>
 				<div
-					className="grid bg-white cursor-pointer h-10 absolute  rounded-full top-6 right-10 w-10"
+					className="grid cursor-pointer absolute top-6 right-8 w-10"
 					onClick={() => setShowSidebar(false)}
 				>
-					<IoIosClose color="black" size="40" />
+					<IoIosClose color="#52DEE5" size="40" />
 				</div>
 				<div className="flex flex-col gap-4">
 					{navOptions.map((option, i) => (

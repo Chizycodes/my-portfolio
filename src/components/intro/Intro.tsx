@@ -11,9 +11,7 @@ export const Intro = () => {
 				<p className="text-3xl text-neon font-fira">Hi, my name is</p>
 				<h1 className="text-5xl font-extrabold text-text md:text-8xl">{data.name}</h1>
 				<h2 className="text-4xl text-textDark md:text-6xl">I am a Software Developer!</h2>
-				<p className="w-4/5 md:w-3/5 text-textDark">
-					I&rsquo;m a <span className="text-neon">{data.profession} </span>from Nigeria. {data.intro}
-				</p>
+				<p className="w-4/5 md:w-3/5 text-textDark">{data.intro}</p>
 				<div className="flex flex-wrap gap-3 pt-5 md:pt-10">
 					<Link href="/#projects">
 						<button className="py-2 px-5 hover:bg-neon hover:border-neon hover:backdrop-blur-lg hover:text-darkerBlue duration-100 border-neon border-2 text-neon rounded-lg">

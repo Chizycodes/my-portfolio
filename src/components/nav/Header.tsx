@@ -29,14 +29,14 @@ const Header = () => {
 
 	return (
 		<nav
-			className={`px-8 md:px-24 fixed md:py-4 py-6 bg-bgblue/60 backdrop-filter backdrop-blur-xl w-full max-w-[100vw] top-0 z-20 flex justify-between items-center ${
+			className={`px-8 md:px-24 fixed md:py-4 py-4 bg-bgblue/60 backdrop-filter backdrop-blur-xl w-full max-w-[100vw] top-0 z-20 flex justify-between items-center ${
 				handleShow ? "shadow-2xl" : ""
 			}`}
 		>
 			<div className="flex justify-between items-center w-full max-w-7xl mx-auto">
 				<Link href="/#intro">
 					{/* <Logo className="cursor-pointer" /> */}
-					<h1 className="text-neon font-bold text-4xl font-sora">J.O</h1>
+					<h1 className="text-neon font-bold text-3xl md:text-4xl font-sora">J.O</h1>
 					{/* <Image src={Logo} height={100} width={100} alt="logo" /> */}
 				</Link>
 

@@ -6,7 +6,7 @@ import data from '@/data';
 
 export const metadata: Metadata = {
 	title: data.name,
-	description: data.about1,
+	description: data.intro,
 	keywords: data.keywords,
 };
 

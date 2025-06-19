@@ -7,11 +7,49 @@ const data = {
 		"Joy, Okwuidre, Chisom, Joy Okwudire, Joy Chisom Okwuidre web developer, Frontend developer, frontend engineer, backend developer, software developer",
 	profession: "Software developer",
 	intro:
-		"I specialize in crafting both frontend and backend solutions, turning ideas into reality through clean and efficient code. Let's build something amazing together! 🚀",
-	about1:
-		"Hello there! I'm Joy Okwudire, a passionate software developer from Nigeria. My journey in the tech world has been an exciting adventure filled with problem-solving, creativity, and continuous learning. I thrive on turning ideas into reality through clean and efficient code. My goal is to create digital experiences that not only meet but exceed expectations.",
-	about2:
-		"I specialize in frontend development, where I leverage my skills in React.js, React Native, and Next.js to craft seamless and interactive user interfaces. I'm also well-versed in backend technologies like Node.js and MongoDB, allowing me to bridge the gap between design and functionality.",
+		"I specialize in building clean, efficient frontend and backend solutions that turn ideas into real, user-focused products. I enjoy working across the stack, from crafting responsive UIs to developing scalable APIs. Let’s build something amazing together! 🚀",
+	about: [
+		`Hi, I’m Joy Okwudire — a software developer with over four years of experience building web and mobile applications. I enjoy turning ideas into useful, user-friendly products through clean, efficient code. My experience covers a range of projects, from e-commerce platforms to ERP systems, where I’ve focused on creating smooth and responsive user interfaces.`,
+
+		`I specialize in frontend development using tools like React.js, React Native, Next.js and Vue.js, but I also have working knowledge of backend technologies like Node.js, Express and MongoDB, which allows me to understand and contribute to full-stack workflows when needed. I’ve collaborated with cross-functional teams to build reusable components, optimize performance, and integrate APIs — delivering complete, user-ready features.`,
+
+		`I’m comfortable working in agile teams and enjoy learning from every project I take on. I’m also a certified AWS Cloud Practitioner, and I’m always open to learning new technologies and growing as a developer.`,
+
+		`When I’m not coding, you can find me exploring new tech trends, contributing to open-source projects, or enjoying a good book. I’m passionate about using technology to solve real-world problems and am always looking for opportunities to collaborate on exciting projects. If you’re interested in working together or just want to chat about tech, feel free to reach out!`,
+	],
+
+	badges: [
+		{
+			name: "AWS Cloud Practitioner",
+			image: "/images/aws-certified-cloud-practitioner.png",
+			link: "https://www.credly.com/badges/07a7666c-c210-4d88-b80c-4f4bcd3874b7/public_url",
+		},
+		{
+			name: "AWS Cloud Practitioner",
+			image: "/images/aws-certified-cloud-practitioner.png",
+			link: "https://www.credly.com/badges/07a7666c-c210-4d88-b80c-4f4bcd3874b7/public_url",
+		},
+		{
+			name: "AWS Cloud Practitioner",
+			image: "/images/aws-certified-cloud-practitioner.png",
+			link: "https://www.credly.com/badges/07a7666c-c210-4d88-b80c-4f4bcd3874b7/public_url",
+		},
+		{
+			name: "AWS Cloud Practitioner",
+			image: "/images/aws-certified-cloud-practitioner.png",
+			link: "https://www.credly.com/badges/07a7666c-c210-4d88-b80c-4f4bcd3874b7/public_url",
+		},
+		{
+			name: "AWS Cloud Practitioner",
+			image: "/images/aws-certified-cloud-practitioner.png",
+			link: "https://www.credly.com/badges/07a7666c-c210-4d88-b80c-4f4bcd3874b7/public_url",
+		},
+		{
+			name: "AWS Cloud Practitioner",
+			image: "/images/aws-certified-cloud-practitioner.png",
+			link: "https://www.credly.com/badges/07a7666c-c210-4d88-b80c-4f4bcd3874b7/public_url",
+		},
+	],
 
 	skills: [
 		{
