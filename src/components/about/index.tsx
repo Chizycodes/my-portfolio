@@ -20,14 +20,17 @@ export const About = () => {
 					transition={{ duration: 0.6, ease: "easeOut" }}
 					viewport={{ once: false, amount: 0.3 }}
 				>
-					<div className="relative border-2 rounded-xl w-full max-w-[24rem] h-96 border-neon">
-						<Image
-							src={data.image}
-							alt={data.name}
-							className="w-full h-full rounded-xl scale-90"
-							height={250}
-							width={250}
-						/>
+					<div className="border-2 rounded-xl w-full max-w-[24rem] h-[25rem] border-neon flex justify-center">
+						<div className="rounded-xl w-max h-full scale-90 overflow-hidden">
+							<Image
+								src={data.image}
+								alt={data.name}
+								className="w-full h-full object-contain object-top"
+								height={1000}
+								width={1500}
+								quality={100}
+							/>
+						</div>
 					</div>
 
 					<motion.div

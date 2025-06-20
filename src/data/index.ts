@@ -1,6 +1,6 @@
 const data = {
 	name: "Joy Okwudire",
-	image: "/avatar.jpg",
+	image: "/avatar2.png",
 	username: "chizycodes",
 	resumeUrl: "https://drive.google.com/file/d/1LGbGdAFTqqqMzH9z3sHyQOIEpKAa4i8j/view?usp=drive_link",
 	keywords:
