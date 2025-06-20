@@ -7,7 +7,7 @@ type HeadingProps = {
 
 function Heading({ tag }: HeadingProps) {
 	return (
-		<div className={`${tag ? 'pt-10 pb-4 sm:pt-24 sm:pb-20' : 'py-12 sm:py-20'} w-full text-center relative`}>
+		<div className={`${tag ? 'pt-10 pb-4 sm:pt-24 sm:pb-20' : 'py-12 sm:py-20 pt-10'} w-full text-center relative`}>
 			{tag ? (
 				<>
 					<h1 className="text-3xl sm:text-4xl inline-block w-auto mx-auto mb-8 relative text-text">
@@ -22,10 +22,10 @@ function Heading({ tag }: HeadingProps) {
 					</h1>
 				</>
 			) : (
-				<h1 className="text-4xl sm:text-6xl inline-block w-auto mx-auto mb-8 relative text-text">Projects</h1>
+				<h1 className="text-xl sm:text-4xl inline-block w-auto mx-auto mb-5 relative text-text font-medium">Projects</h1>
 			)}
 			{!tag && (
-				<p className="text-xl max-w-3xl m-auto text-textDark">
+				<p className="text-base md:text-lg max-w-3xl m-auto text-textDark">
 					I&apos;ve built cool apps using a variety of technologies, from React/Next.js on the frontend to Node.js on
 					the backend. Here are some of my favorites.
 				</p>

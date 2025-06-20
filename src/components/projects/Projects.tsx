@@ -16,7 +16,7 @@ const containerVariants = {
 };
 
 const cardVariants = {
-	hidden: { opacity: 0, y: 30 },
+	hidden: { opacity: 0, y: 25 },
 	visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
 };
 
@@ -33,7 +33,7 @@ function Projects() {
 				variants={containerVariants}
 				initial="hidden"
 				whileInView="visible"
-				viewport={{ once: false, amount: 0.2 }}
+				viewport={{ once: false }}
 			>
 				{projectsList?.slice(0, showAllProjects ? undefined : 3).map((item) => {
 					return (
