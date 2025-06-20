@@ -20,8 +20,9 @@ export const About = () => {
 					transition={{ duration: 0.6, ease: "easeOut" }}
 					viewport={{ once: false, amount: 0.3 }}
 				>
-					<div className="border-2 rounded-xl w-full max-w-[24rem] h-[25rem] border-neon flex justify-center">
-						<div className="rounded-xl w-max h-full scale-90 overflow-hidden">
+					<div className="relative border-2 rounded-xl w-full max-w-[24rem] h-[25rem] border-neon flex justify-center overflow-hidden">
+						<Image src="/neon-bg.jpg" alt="background" fill className="object-cover opacity-30" quality={100} />
+						<div className="relative rounded-xl w-max h-full overflow-hidden">
 							<Image
 								src={data.image}
 								alt={data.name}
