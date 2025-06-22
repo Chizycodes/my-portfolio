@@ -18,7 +18,7 @@ export const About = () => {
 					initial={{ opacity: 0, y: 50 }}
 					whileInView={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.6, ease: "easeOut" }}
-					viewport={{ once: false, amount: 0.3 }}
+					viewport={{ once: true, amount: 0.3 }}
 				>
 					<div className="relative border-2 rounded-xl w-full max-w-[24rem] h-[25rem] border-neon flex justify-center overflow-hidden">
 						<Image src="/neon-bg.jpg" alt="background" fill className="object-cover opacity-30" quality={100} />
@@ -38,7 +38,7 @@ export const About = () => {
 						className="w-full flex gap-4 flex-wrap mt-8"
 						initial="hidden"
 						whileInView="visible"
-						viewport={{ once: false }}
+						viewport={{ once: true }}
 						variants={{
 							visible: { transition: { staggerChildren: 0.15 } },
 						}}
@@ -73,12 +73,12 @@ export const About = () => {
 							},
 						},
 					}}
-					viewport={{ once: false }}
+					viewport={{ once: true }}
 				>
 					{data.about.map((paragraph, index) => (
 						<motion.p
 							key={index}
-							className="text-xl text-textDark max-w-3xl mb-4"
+							className="text-base text-textDark max-w-3xl mb-4"
 							variants={{
 								hidden: { opacity: 0, y: 20 },
 								visible: { opacity: 1, y: 0 },

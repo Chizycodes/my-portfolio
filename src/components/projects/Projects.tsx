@@ -33,7 +33,7 @@ function Projects() {
 				variants={containerVariants}
 				initial="hidden"
 				whileInView="visible"
-				viewport={{ once: false }}
+				viewport={{ once: true }}
 			>
 				{projectsList?.slice(0, showAllProjects ? undefined : 3).map((item) => {
 					return (

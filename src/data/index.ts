@@ -7,7 +7,7 @@ const data = {
 		"Joy, Okwuidre, Chisom, Joy Okwudire, Joy Chisom Okwuidre web developer, Frontend developer, frontend engineer, backend developer, software developer",
 	profession: "Software developer",
 	intro:
-		"I specialize in building clean, efficient frontend and backend solutions that turn ideas into real, user-focused products. I enjoy working across the stack, from crafting responsive UIs to developing scalable APIs. Let’s build something amazing together! 🚀",
+		"I specialize in building clean, efficient frontend and backend solutions that turn ideas into real, user-focused products. I enjoy working across the stack, from crafting responsive UIs to developing scalable APIs.",
 	about: [
 		`Hi, I’m Joy Okwudire — a software developer with over four years of experience building web and mobile applications. I enjoy turning ideas into useful, user-friendly products through clean, efficient code. My experience covers a range of projects, from e-commerce platforms to ERP systems, where I’ve focused on creating smooth and responsive user interfaces.`,
 

@@ -28,7 +28,7 @@ const Contact = () => {
 					initial={{ opacity: 0, y: 30 }}
 					whileInView={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.6 }}
-					viewport={{ once: false, amount: 0.2 }}
+					viewport={{ once: true, amount: 0.2 }}
 				>
 					<LineSvg className="relative w-20 h-1 md:w-60" />
 					<h2 className="text-xl text-text md:text-4xl whitespace-nowrap">Get in Touch</h2>
@@ -40,7 +40,7 @@ const Contact = () => {
 					variants={containerVariants}
 					initial="hidden"
 					whileInView="visible"
-					viewport={{ once: false, amount: 0.2 }}
+					viewport={{ once: true, amount: 0.2 }}
 				>
 					{data.links.map(({ icon, link, name }, i) => (
 						<motion.div key={name} variants={itemVariants}>
