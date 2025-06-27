@@ -94,6 +94,18 @@ const data = {
 	],
 	projects: [
 		{
+			title: "Project Management App",
+			img: "/images/project-mgt.png",
+			about: "A full-stack project management app with multi-view task tracking, user authentication, and cloud-based PostgreSQL, deployed on AWS.",
+			tags: ["React.js", "Redux Toolkit", "RTK Query", "TailwindCSS", "Node.js", "Express", "PostgreSQL", "AWS"],
+			links: {
+				github: "https://github.com/Chizycodes/Project-Management-App",
+				live: "https://main.d17d58bkzc7x8p.amplifyapp.com/",
+			},
+			role: "FullStack Developer",
+			id: 8,
+		},
+		{
 			title: "Yaraa.io",
 			img: "/images/yaraa2.png",
 			about:
@@ -146,7 +158,7 @@ const data = {
 			img: "/images/diagnosync.png",
 			about:
 				"Developed during the 7-day Klusterthon 2023 Hackathon. DiagnoSync provides answers to health related questions and concerns",
-			tags: ["Next.js", "TailwindCSS", "Node.js", "Express", "MongoDB", "OpenAI API"],
+			tags: ["Next.js", "TailwindCSS", "Node.js", "Express", "MongoDB", "OpenAI API", "AI"],
 			links: {
 				github: "https://github.com/Chizycodes/klusterthon-326",
 				live: "https://klusterthon-326.vercel.app",
