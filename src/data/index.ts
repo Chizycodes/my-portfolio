@@ -102,7 +102,7 @@ const data = {
 				github: "https://github.com/Chizycodes/Project-Management-App",
 				live: "https://main.d17d58bkzc7x8p.amplifyapp.com/",
 			},
-			role: "FullStack Developer",
+			role: "FullStack Developer", 
 			id: 8,
 		},
 		{
